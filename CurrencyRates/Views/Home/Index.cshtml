@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Currency Rates";
+}
+
+<script src="~/Scripts/chartjs/chart.min.js"></script>
+<script src="~/Scripts/libs/moment.min.js"></script>
+<script src="~/Scripts/app/main.js"></script>
+
+<div class="form-inline chart-toolbar">
+    საწყისი თარიღი: <input id="fromDate" class="form-control input-sm" type="date" />
+    საბოლოო თარიღი: <input id="toDate" class="form-control input-sm" type="date" />
+
+    <a class="btn btn-primary btn-sm" onclick="loadChart()"><i class="fa fa-refresh"></i> განახლება</a>
+</div>
+
+<canvas id="currencyRates"></canvas>
